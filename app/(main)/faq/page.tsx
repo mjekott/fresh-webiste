@@ -1,5 +1,5 @@
 const FAQsPage = () => {
-  return <div>FAQsPage</div>;
+  return <div className="pt-[88px]">FAQsPage</div>;
 };
 
 export default FAQsPage;

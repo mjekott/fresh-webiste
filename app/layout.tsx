@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Quicksand, Nunito_Sans } from "next/font/google";
 import "./globals.css";
+import { AOSInit } from "@/components/AOS";
+import { SITE_DESCRIPTION, SITE_NAME } from "@/constants/seo.constants";
 
 const fontHeading = Quicksand({
   subsets: ["latin"],
@@ -13,8 +15,12 @@ const fontBody = Nunito_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Fresh2Carts Website",
-  description: "Go grocery shopping without moving an inch",
+  title: {
+    absolute: SITE_NAME,
+    template: `%s | ${SITE_NAME}`,
+  },
+  description: SITE_DESCRIPTION,
+  keywords: ["grocery", "shopping", "Best shopping", "Best grocery"],
 };
 
 export default function RootLayout({
@@ -28,6 +34,7 @@ export default function RootLayout({
         className={`${fontHeading.variable} ${fontBody.variable} antialiased`}
       >
         {children}
+        <AOSInit />
       </body>
     </html>
   );

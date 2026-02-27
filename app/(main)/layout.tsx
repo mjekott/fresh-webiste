@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import Navbar from "./_components/Navbar/Navbar";
 import Footer from "./_components/Footer";
+import ScrollUpBody from "@/components/ScrollToTop";
 
 const MainLayout = ({ children }: { children: ReactNode }) => {
   return (
@@ -8,6 +9,7 @@ const MainLayout = ({ children }: { children: ReactNode }) => {
       <Navbar />
       {children}
       <Footer />
+      <ScrollUpBody />
     </div>
   );
 };

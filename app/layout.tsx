@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Quicksand, Nunito_Sans } from "next/font/google";
 import "./globals.css";
-import { AOSInit } from "@/components/AOS";
 import { SITE_DESCRIPTION, SITE_NAME } from "@/constants/seo.constants";
+import Provider from "./providers";
 
 const fontHeading = Quicksand({
   subsets: ["latin"],
@@ -33,8 +33,7 @@ export default function RootLayout({
       <body
         className={`${fontHeading.variable} ${fontBody.variable} antialiased`}
       >
-        {children}
-        <AOSInit />
+        <Provider>{children}</Provider>
       </body>
     </html>
   );

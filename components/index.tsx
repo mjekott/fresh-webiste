@@ -4,4 +4,15 @@ import leafDark from "@/public/images/leaf-dark.png";
 import onion from "@/public/images/onion.png";
 import flower from "@/public/images/flower.png";
 import smileEmoji from "@/public/images/ya.png";
-export { img40, leafLight, leafDark, onion, flower, smileEmoji };
+import partner from "@/public/images/home/partner.png";
+import dasher from "@/public/images/home/dasher.png";
+export {
+  img40,
+  leafLight,
+  leafDark,
+  onion,
+  flower,
+  smileEmoji,
+  partner,
+  dasher,
+};

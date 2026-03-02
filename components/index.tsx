@@ -6,6 +6,11 @@ import flower from "@/public/images/flower.png";
 import smileEmoji from "@/public/images/ya.png";
 import partner from "@/public/images/home/partner.png";
 import dasher from "@/public/images/home/dasher.png";
+import clayDark from "@/public/images/home/clay-dark.png";
+import google from "@/public/images/logos/google-play.png";
+import apple from "@/public/images/logos/Shape.png";
+import iconEgg from "@/public/images/home/Icon_eggs.png";
+import iconFruit from "@/public/images/home/Icon_fruits.png";
 export {
   img40,
   leafLight,
@@ -15,4 +20,9 @@ export {
   smileEmoji,
   partner,
   dasher,
+  clayDark,
+  google,
+  apple,
+  iconFruit,
+  iconEgg,
 };

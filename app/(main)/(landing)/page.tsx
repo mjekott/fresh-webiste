@@ -1,16 +1,15 @@
 import Hero from "./_components/Hero";
-import NoiseBackground from "@/components/NoiseBackground";
 import Partner from "./_components/Partner";
 import GrowingCommunity from "./_components/GrowingCommunity";
+import Testimonials from "./_components/Testimonials";
 
 const LandingPage = () => {
   return (
     <>
-      <NoiseBackground variant="paper" color="#ffffff">
-        <Hero />
-      </NoiseBackground>
+      <Hero />
       <Partner />
       <GrowingCommunity />
+      <Testimonials />
     </>
   );
 };

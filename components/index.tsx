@@ -11,6 +11,8 @@ import google from "@/public/images/logos/google-play.png";
 import apple from "@/public/images/logos/Shape.png";
 import iconEgg from "@/public/images/home/Icon_eggs.png";
 import iconFruit from "@/public/images/home/Icon_fruits.png";
+import testimonialimg from "@/public/images/home/testimonial.jpg";
+import vector from "@/public/images/home/Vector 6322.png";
 export {
   img40,
   leafLight,
@@ -25,4 +27,6 @@ export {
   apple,
   iconFruit,
   iconEgg,
+  testimonialimg,
+  vector,
 };

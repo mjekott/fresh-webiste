@@ -7,7 +7,10 @@ const Testimonials = () => {
   return (
     <Container>
       <section className="py-5 md:py-32 w-full max-w-[1052px] justify-self-center">
-        <div className="flex md:justify-center text-left md:text-center flex-col">
+        <div
+          data-aos="fade-up"
+          className="flex md:justify-center text-left md:text-center flex-col"
+        >
           <h1 className="text-primary-500">TESTIMONIALS</h1>
 
           <p

@@ -34,7 +34,10 @@ export default function Hero() {
 
         {/* Main Content */}
         <Container>
-          <div className="relative flex flex-col md:flex-row items-center justify-between md:h-[623px] z-10">
+          <div
+            data-aos="fade-right"
+            className="relative flex flex-col md:flex-row items-center justify-between md:h-[623px] z-10"
+          >
             <div className="w-full md:max-w-[511px] mt-20 md:mt-0">
               <h1 className="text-tertiary-D-900 font-bold text-[30px] md:text-[54px] leading-[1.3]">
                 Go grocery shopping without moving an{" "}
@@ -48,7 +51,10 @@ export default function Hero() {
         </Container>
 
         {/* Right Pinned Image */}
-        <div className="mt-[23px] lg:absolute md:top-[50px] lg:top-[97px] right-10 z-20 w-full max-w-[625px] flex justify-end">
+        <div
+          data-aos="zoom-in-right"
+          className="mt-[23px] lg:absolute md:top-[50px] lg:top-[97px] right-10 z-20 w-full max-w-[625px] flex justify-end"
+        >
           <div className="relative w-full">
             <Image
               src={landingBg}

@@ -12,7 +12,10 @@ const GrowingCommunity = () => {
       <div className="relative overflow-hidden w-full">
         <Container>
           <div className="md:min-h-[732px] py-12 w-full flex flex-col md:flex-row items-center">
-            <div className="hidden md:block md:w-[55%] lg:w-[50%]">
+            <div
+              data-aos="zoom-in-right"
+              className="hidden md:block md:w-[55%] lg:w-[50%]"
+            >
               <Image
                 src={clayDark}
                 alt="clay dark"
@@ -22,7 +25,10 @@ const GrowingCommunity = () => {
               />
             </div>
 
-            <div className="w-full md:ml-auto md:max-w-[486px] flex flex-col md:gap-6 mt-8 md:mt-0">
+            <div
+              data-aos="fade-left"
+              className="w-full md:ml-auto md:max-w-[486px] flex flex-col md:gap-6 mt-8 md:mt-0"
+            >
               <h3 className="text-2xl md:text-[20px] md:leading-[25px] lg:text-[40px] font-bold lg:leading-[50px] text-tertiary-D-900">
                 Join our growing community.{" "}
                 <span className="text-secondary-100">Download</span> and start{" "}

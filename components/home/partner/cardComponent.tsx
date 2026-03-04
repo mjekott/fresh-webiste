@@ -26,7 +26,10 @@ const CardComponent = ({
   desctextColor,
 }: Props) => {
   return (
-    <Card className="relative w-full lg:pt-[70px] lg:px-[55px] h-[192px] max-w-[581px] md:h-[306px] overflow-hidden rounded-2xl">
+    <Card
+      data-aos="fade-up"
+      className="relative w-full lg:pt-[70px] lg:px-[55px] h-[192px] max-w-[581px] md:h-[306px] overflow-hidden rounded-2xl"
+    >
       {/* Background Image */}
       <Image
         src={bgImg}

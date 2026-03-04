@@ -4,6 +4,7 @@ import NoiseBackground from "@/components/NoiseBackground";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import DownloadApp from "@/components/downloadApp";
+import BrandIcons from "@/components/BrandIcons";
 
 const GrowingCommunity = () => {
   return (
@@ -44,24 +45,12 @@ const GrowingCommunity = () => {
         </Container>
         {/* Top Right Decoration */}
         <div className="pointer-events-none absolute top-6 right-[47.35px] translate-x-1/3 -z-10 w-24 sm:w-32 md:w-40">
-          <Image
-            src={iconFruit}
-            alt="fruit icon"
-            className="w-full h-auto object-contain"
-            placeholder="blur"
-            loading="lazy"
-          />
+          <BrandIcons.IconFruit />
         </div>
 
         {/* Bottom Left Decoration */}
         <div className="pointer-events-none absolute bottom-6 left-[47.35px] -translate-x-1/3 -z-10 w-9 sm:w-2 md:w-24">
-          <Image
-            src={iconEgg}
-            alt="egg icon"
-            className="w-full h-auto object-contain"
-            placeholder="blur"
-            loading="lazy"
-          />
+          <BrandIcons.IconEgg />
         </div>
       </div>
     </NoiseBackground>

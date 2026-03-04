@@ -1,8 +1,7 @@
 import { testimonialimg, vector } from "@/components/index";
 import Container from "@/components/Container";
-
-import Image from "next/image";
 import TestimonialCarousel from "@/components/home/testimonials/carousel";
+import DecorativeImageCard from "@/components/DecorativeImageCard";
 
 const Testimonials = () => {
   return (
@@ -19,25 +18,11 @@ const Testimonials = () => {
           </p>
         </div>
         <div className="mt-[40px] md:mt-[86px] flex flex-col md:flex-row justify-between items-center gap-14 md:gap-[161px]">
-          <figure className="relative w-full max-w-[200px] sm:max-w-[300px] md:max-w-[346px] aspect-[346/388]">
-            <div className="absolute -left-[12.9%] top-[9%] w-[108%] h-full bg-[#E7EFEB] rounded-full" />
-
-            <Image
-              src={testimonialimg}
-              alt="testimonial"
-              fill
-              placeholder="blur"
-              className="object-cover z-10 rounded-full"
-            />
-            <Image
-              src={vector}
-              alt="testimonial"
-              width={175.54}
-              height={132}
-              placeholder="blur"
-              className="absolute w-auto h-auto md:h-[132px] md:w-[175px] -left-[12.9%] -top-[9%] z-10"
-            />
-          </figure>
+          <DecorativeImageCard
+            src={testimonialimg}
+            vectorSrc={vector}
+            alt="testimonial"
+          />
           <TestimonialCarousel />
         </div>
       </section>

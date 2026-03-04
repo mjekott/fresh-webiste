@@ -1,4 +1,4 @@
-import { testimonialimg } from "@/components/index";
+import { testimonialimg, vector } from "@/components/index";
 import Container from "@/components/Container";
 
 import Image from "next/image";
@@ -28,6 +28,14 @@ const Testimonials = () => {
               fill
               placeholder="blur"
               className="object-cover z-10 rounded-full"
+            />
+            <Image
+              src={vector}
+              alt="testimonial"
+              width={175.54}
+              height={132}
+              placeholder="blur"
+              className="absolute w-auto h-auto md:h-[132px] md:w-[175px] -left-[12.9%] -top-[9%] z-10"
             />
           </figure>
           <TestimonialCarousel />

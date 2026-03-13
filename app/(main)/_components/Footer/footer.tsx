@@ -94,6 +94,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between pt-10 border-t border-white/20">
           <Image
             src="/images/logos/logo2.png"
+            
             alt="Fresh2carts Logo"
             width={32}
             height={32}

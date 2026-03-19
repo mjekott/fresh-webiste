@@ -1,8 +1,16 @@
 import React, { ReactNode } from "react";
 
-const Glassmorphism = ({ children }: { children: ReactNode }) => {
+const Glassmorphism = ({
+  children,
+  className = "",
+}: {
+  children: ReactNode;
+  className?: string;
+}) => {
   return (
-    <div className="w-full bg-white/30 backdrop-blur-md border rounded-full border-white/20 p-2.5 shadow-md">
+    <div
+      className={`bg-white/30 backdrop-blur-md border border-white/20 shadow-md ${className}`}
+    >
       {children}
     </div>
   );

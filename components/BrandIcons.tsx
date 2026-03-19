@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { iconEgg, iconFruit } from "./index";
 
 const BrandIcons = {
   logo: () => (
@@ -12,6 +13,24 @@ const BrandIcons = {
         className="object-contain"
       />
     </div>
+  ),
+  IconFruit: () => (
+    <Image
+      src={iconFruit}
+      alt="fruit icon"
+      className="w-full h-auto object-contain"
+      placeholder="blur"
+      loading="lazy"
+    />
+  ),
+  IconEgg: () => (
+    <Image
+      src={iconEgg}
+      alt="egg icon"
+      className="w-full h-auto object-contain"
+      placeholder="blur"
+      loading="lazy"
+    />
   ),
 };
 

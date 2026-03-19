@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 
 type NoiseBackgroundProps = {
   children: ReactNode;
-  variant?: "paper" | "lines";
+  variant?: "paper" | "lines" | "subtle";
   color?: string;
 };
 
@@ -20,6 +20,10 @@ export default function NoiseBackground({
     lines: {
       mobile: "url('/images/textures/lines-small.png')",
       desktop: "url('/images/textures/lines-large.png')",
+    },
+    subtle: {
+      mobile: "url('/images/textures/subtle-small.png')",
+      desktop: "url('/images/textures/subtle-large.png')",
     },
   };
 

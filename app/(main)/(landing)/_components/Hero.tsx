@@ -70,7 +70,6 @@ export default function Hero() {
                   <Image
                     src={smileEmoji}
                     alt="smile"
-                    placeholder="blur"
                     loading="lazy"
                     className="w-8 h-8 md:w-14 md:h-14 object-contain"
                   />

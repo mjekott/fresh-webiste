@@ -15,6 +15,11 @@ import testimonialimg from "@/public/images/home/testimonial.jpg";
 import vector from "@/public/images/home/Vector 6322.png";
 import e400r from "@/public/images/error/404-error.png";
 import e500r from "@/public/images/error/500-error.png";
+import customers from "@/public/images/about/customers.png";
+import delivery from "@/public/images/about/delivery.png";
+import vendor from "@/public/images/about/vendor.png";
+import appstore from "@/public/images/about/appstore.png";
+import googleplay from "@/public/images/about/googleplay.png";
 export {
   img40,
   leafLight,
@@ -33,4 +38,9 @@ export {
   vector,
   e400r,
   e500r,
+  customers,
+  delivery,
+  vendor,
+  appstore,
+  googleplay,
 };

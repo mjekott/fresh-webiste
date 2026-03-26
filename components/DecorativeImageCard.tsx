@@ -21,7 +21,7 @@ const DecorativeImageCard: React.FC<DecorativeImageCardProps> = ({
         src={src}
         alt={alt}
         fill
-        placeholder="blur"
+        {...(typeof src !== 'string' && { placeholder: "blur" as const })}
         className="object-cover z-10 rounded-full"
       />
       {vectorSrc && (
@@ -30,7 +30,7 @@ const DecorativeImageCard: React.FC<DecorativeImageCardProps> = ({
           alt={alt}
           width={175.54}
           height={132}
-          placeholder="blur"
+          {...(typeof vectorSrc !== 'string' && { placeholder: "blur" as const })}
           className="absolute w-auto h-auto md:h-[132px] md:w-[175px] -left-[12.9%] -top-[9%] z-10"
         />
       )}

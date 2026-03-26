@@ -35,7 +35,7 @@ const CardComponent = ({
         src={bgImg}
         alt={title}
         fill
-        placeholder="blur"
+        {...(typeof bgImg !== 'string' && { placeholder: "blur" as const })}
         className="object-cover"
       />
 

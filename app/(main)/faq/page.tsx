@@ -30,8 +30,11 @@ const FAQsPage = () => {
         <Container>
           <div className="grid lg:grid-cols-2 gap-10 items-center">
 
-            
-            <div>
+            {/* Left Content */}
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
               <p className="text-sm text-gray-500 mb-3">The FAQs</p>
 
               <h1 className="text-5xl font-semibold text-gray-900 mb-4">
@@ -43,11 +46,16 @@ const FAQsPage = () => {
               </p>
             </div>
 
-            
-            <div className="flex justify-end">
+            {/* Right Image */}
+            <div 
+              className="flex justify-end"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
               <div className="relative w-120">
 
-                
+                {/* Main Image */}
                 <Image
                   src="/images/FAQ/FAQimg2.png"
                   alt="Fresh fruits and vegetables"
@@ -56,7 +64,7 @@ const FAQsPage = () => {
                   className="w-full h-auto object-contain mix-blend-multiply"
                 />
 
-                
+                {/* Quality Badge */}
                 <div
                   className="
                     absolute
@@ -73,6 +81,9 @@ const FAQsPage = () => {
                     justify-center
                     shadow-lg
                   "
+                  data-aos="zoom-in"
+                  data-aos-duration="800"
+                  data-aos-delay="400"
                 >
                   <Image
                     src="/images/FAQ/FAQimg1.png" 
@@ -95,9 +106,13 @@ const FAQsPage = () => {
         <Container>
           <div className="grid lg:grid-cols-[220px_1fr] gap-14">
 
-            
-            <div className="border-r border-gray-200 pr-6 space-y-6">
-              {categories.map((category) => (
+            {/* Sidebar */}
+            <div 
+              className="border-r border-gray-200 pr-6 space-y-6"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              {categories.map((category, index) => (
                 <button
                   key={category}
                   onClick={() => setActiveCategory(category)}
@@ -106,6 +121,9 @@ const FAQsPage = () => {
                       ? "text-green-700 font-medium"
                       : "text-gray-500 hover:text-gray-700"
                   }`}
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                  data-aos-delay={index * 100}
                 >
                   {category}
                 </button>
@@ -113,9 +131,19 @@ const FAQsPage = () => {
             </div>
 
             {/* FAQ Items */}
-            <div className="divide-y divide-gray-200">
+            <div 
+              className="divide-y divide-gray-200"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
               {faqItems.map((item, index) => (
-                <div key={index} className="py-6">
+                <div 
+                  key={index} 
+                  className="py-6"
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                  data-aos-delay={index * 100}
+                >
 
                   <button
                     onClick={() => toggleItem(index)}
@@ -126,14 +154,14 @@ const FAQsPage = () => {
                     </span>
 
                     {expandedItem === index ? (
-                      <Minus className="w-5 h-5 text-gray-500" />
+                      <Minus className="w-5 h-5 text-gray-500 transition-transform duration-300" />
                     ) : (
-                      <Plus className="w-5 h-5 text-gray-500" />
+                      <Plus className="w-5 h-5 text-gray-500 transition-transform duration-300" />
                     )}
                   </button>
 
                   {expandedItem === index && (
-                    <p className="mt-4 text-sm text-gray-500 leading-relaxed max-w-2xl">
+                    <p className="mt-4 text-sm text-gray-500 leading-relaxed max-w-2xl animate-fadeIn">
                       {item.answer}
                     </p>
                   )}
@@ -149,21 +177,25 @@ const FAQsPage = () => {
       <section className="relative bg-[#EFEFEA] py-20 overflow-hidden"
       style={{ backgroundImage: "url('/images/about/hero-bg.png')" }}>
         <Container>
-          <div className="text-center max-w-2xl mx-auto relative z-10">
+          <div 
+            className="text-center max-w-2xl mx-auto relative z-10"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
 
             <h2 className="text-4xl font-semibold text-gray-900 mb-4">
               Still Need Help?
             </h2>
 
             <p className="text-gray-500 mb-6">
-              Our team is happy to answer your questions. Contact us and we’ll
+              Our team is happy to answer your questions. Contact us and we&apos;ll
               be in touch as soon as possible.
             </p>
 
             <div className="flex flex-col sm:flex-row justify-center gap-4 text-gray-700 text-sm">
               <a
                 href="mailto:Support@fresh2carts.com"
-                className="hover:underline"
+                className="hover:underline transition"
               >
                 Support@fresh2carts.com
               </a>
@@ -172,7 +204,7 @@ const FAQsPage = () => {
 
               <a
                 href="tel:+2348096859495"
-                className="hover:underline"
+                className="hover:underline transition"
               >
                 +2348096859495
               </a>
@@ -186,6 +218,9 @@ const FAQsPage = () => {
             width={70}
             height={70}
             className="absolute top-10 right-20 opacity-80"
+            data-aos="fade-left"
+            data-aos-duration="800"
+            data-aos-delay="200"
           />
 
           <Image
@@ -194,6 +229,9 @@ const FAQsPage = () => {
             width={70}
             height={70}
             className="absolute bottom-8 left-20 opacity-60"
+            data-aos="fade-right"
+            data-aos-duration="800"
+            data-aos-delay="200"
           />
         </Container>
       </section>
@@ -203,5 +241,3 @@ const FAQsPage = () => {
 };
 
 export default FAQsPage;
-
-
